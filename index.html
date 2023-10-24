@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="shortcut icon" href="./tictac.png" type="image/x-icon">
+    <title>Tic-tac toy</title>
+</head>
+<body>
+   
+    <div class="root">
+        <div class="currentPlayer">
+            <span>Next step: <span id="currentPl">X</span></span>
+        </div>
+        <div class="gameResult">
+            <span>Winner of the game:</span>
+            <br/>
+            <span id="whoWins">?</span>
+        </div>
+        <div class="gameHistory">
+            History:
+            <br/>
+            <div id="roundHistory"></div>
+        </div>
+        <div id="area"></div>
+        <div class="stat">
+            <table>
+                <th colspan="2">Statistic</th>
+                <tr>
+                    <td>Win X</td>
+                    <td id="sX">
+                        <span>0</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Win O</td>
+                    <td id="sO">
+                        <span>0</span>
+                    </td>
+
+                </tr>
+                <tr>
+                    <td>Equal</td>
+                    <td id="sD">
+                        <span>0</span>
+                    </td>
+                 </tr>
+            </table>
+        </div>
+    </div>
+    <audio id="bell" src="./bellcollectsmall.mp3"></audio>
+    <script src="./script.js"></script>
+</body>
+</html>

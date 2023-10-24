@@ -1,0 +1,141 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.root{
+    padding-top: 250px;
+    height: 100vh;
+    background-color: rgb(55, 55, 135);
+    color: white;
+    display: flex;
+    justify-content: center;
+    
+}
+#area{
+    width: 170px;
+    height: 170px;
+    margin: 10px;
+    
+}
+.cell{
+    width: 50px;
+    height: 50px;
+   font-size: 42px;
+   border: 2px solid;
+   display: inline-block;
+   line-height: 50px;
+   vertical-align: middle;
+   text-align: center;
+   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+   cursor: pointer;
+   color: white;
+
+}
+.cell:hover{
+    background-color: cadetblue;
+}
+.currentPlayer{
+width: 140px;
+font-size: 18px;
+color: white;
+align-items: center;
+margin-top: 10px;
+}
+.stat{
+    margin-top: 10px;
+    align-items: center;
+    font-size: 18px;
+
+}
+.stat table{
+    border-collapse: collapse;
+}
+.stat table,.stat th,.stat td{
+    border: 3px solid;
+    padding: 5px;
+    text-align: center;
+}
+.gameResult{
+    width: 140px;
+    font-size: 18px;
+    align-items: center;
+    margin-top: 10px;
+
+}
+.gameHistory{
+    width: 120px;
+    font-size: 18px;
+    text-align: center;
+    margin-top: 10px;
+}
+@media(max-width:800px){
+    .root{
+        padding-top: 250px;
+    }
+    #area{
+        width: 150px;
+        height: 150px;
+        margin: 8px;
+        
+    }
+    .cell{
+        width: 40px;
+        height: 40px;
+       font-size: 38px;
+       border: 2px solid;
+       display: inline-block;
+       line-height: 50px;
+       vertical-align: middle;
+       text-align: center;
+       font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+       cursor: pointer;
+       color: white;
+    
+    }
+    .currentPlayer{
+        width: 130px;
+        font-size: 18px;
+        color: white;
+        align-items: center;
+        margin-top: 10px;
+        }
+        .stat{
+            margin-top: 10px;
+            align-items: center;
+            font-size: 18px;
+        
+        }
+}
+@media(max-width:600px){
+    .root{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        height: 90vh;
+        color: white;
+        padding: 40px;
+    }
+}
+.currentPlayer{
+    margin-top: 35px;
+    order: 1;
+}
+
+.gameResult{
+    margin-top: 10px;
+    order: 2;
+}
+.gameHistory{
+    margin-top: 10px;
+    order: 3;
+}
+#area{
+    order: 4;
+}
+.stat{
+    margin-top: 10px;
+    order: 5;
+}
+
